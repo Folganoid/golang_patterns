@@ -1,38 +1,15 @@
 package main
 
 import (
-	"./types"
-
 	"./data"
 	"./dataService"
 )
 
 func main() {
 
-	bridge()
-	//adapter()
+	adapter()
 
 }
-
-func bridge() {
-
-	hpScanner := types.HP{}
-	epsonScanner := types.Epson{}
-	
-	linuxPc := types.LinuxPC{}
-	winPc := types.WinPC{}
-	//macPc := types.MacPC{}
-
-
-	linuxPc.AddScanner(hpScanner)
-	winPc.AddScanner(hpScanner)
-	linuxPc.Scan()
-	winPc.Scan()
-	linuxPc.AddScanner(epsonScanner)
-	linuxPc.Scan()
-
-}
-
 
 func adapter() {
 	//send xml
