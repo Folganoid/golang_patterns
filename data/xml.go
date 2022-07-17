@@ -13,5 +13,5 @@ func (doc XmlDocument) GetBodyData() string {
 }
 
 func (doc XmlDocument) SendXmlData() {
-	println("Send XML: " + doc.body)
+	println("Send XML: " + doc.GetBodyData())
 }

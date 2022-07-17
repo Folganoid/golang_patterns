@@ -22,5 +22,5 @@ func (doc *JsonDocument) сonvertJsonToXml() {
 
 func (adapter JsonDocumentAdapter) SendXmlData() {
 	adapter.JsonDocument.сonvertJsonToXml()
-	print("Send JSON->XML data: " + adapter.JsonDocument.body)
+	print("Send JSON->XML data: " + adapter.GetBodyData())
 }

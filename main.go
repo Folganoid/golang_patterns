@@ -7,6 +7,11 @@ import (
 
 func main() {
 
+	adapter()
+
+}
+
+func adapter() {
 	//send xml
 	xml := data.XmlDocument{}
 	xml.SetBodyData("<xml>111</xml>")
@@ -20,5 +25,4 @@ func main() {
 	adapt.JsonDocument = &json
 	dataService.SendXml(adapt)
 	dataService.GetBody(adapt)
-
 }
